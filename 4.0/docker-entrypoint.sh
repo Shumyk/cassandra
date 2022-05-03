@@ -72,6 +72,7 @@ if [ "$1" = 'cassandra' ]; then
 		num_tokens \
 		rpc_address \
 		start_rpc \
+		enable_materialized_views \
 	; do
 		var="CASSANDRA_${yaml^^}"
 		val="${!var}"
